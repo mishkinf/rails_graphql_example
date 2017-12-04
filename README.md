@@ -1,24 +1,10 @@
-# README
+# Rails GraphQL Example API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an example project to play around with building graphql apis inside of rails
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+bundle install
+rails db:create db:seed
+rails s
+open localhost:3000/grapiql
+```
