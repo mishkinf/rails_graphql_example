@@ -6,5 +6,5 @@ This is an example project to play around with building graphql apis inside of r
 bundle install
 rails db:create db:seed
 rails s
-open localhost:3000/grapiql
+open localhost:3000/graphiql
 ```
