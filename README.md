@@ -19,13 +19,29 @@ password: secret
 #### Running a graphql query in graphiql
 
 ```graphql
-projects {
-  id
-  title
-
-  user {
+# Example Project
+query {
+  projects {
     id
-    email
+    title
+
+    user {
+      id
+      email
+    }
+  }
+}
+
+# Example mutation
+mutation {
+  createProject(title: "This is an example Project Title") {
+    id
+    title
+
+    user {
+      id
+      email
+    }
   }
 }
 ```
