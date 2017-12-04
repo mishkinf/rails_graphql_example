@@ -6,10 +6,7 @@ module Types
     implements GraphQL::Relay::Node.interface
 
     global_id_field :id
-    field :title, !types.String do
-      resolve ->(project, args, ctx) { project.user.email + '-' + project.title }
-    end
-
+    field :title, !types.String
     field :user, !UserType
   end
 end
